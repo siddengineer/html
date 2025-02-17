@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Data Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        .table-container {
+            width: 90%;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background: #007bff;
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        tr:nth-child(even) {
+            background: #f9f9f9;
+        }
+        tr:hover {
+            background: #f1f1f1;
+        }
+        .status {
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .active {
+            background: #28a745;
+            color: white;
+        }
+        .inactive {
+            background: #dc3545;
+            color: white;
+        }
+        .pending {
+            background: #ffc107;
+            color: black;
+        }
+        @media (max-width: 768px) {
+            table {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="table-container">
+        <h2>Employee Database</h2>
+        <table>
+            <tr>
+                <th>Employee ID</th>
+                <th>Name</th>
+                <th>Department</th>
+                <th>Email</th>
+                <th>Status</th>
+            </tr>
+            <tr>
+                <td>#101</td>
+                <td>John Doe</td>
+                <td>Marketing</td>
+                <td>john.doe@example.com</td>
+                <td><span class="status active">Active</span></td>
+            </tr>
+            <tr>
+                <td>#102</td>
+                <td>Jane Smith</td>
+                <td>Finance</td>
+                <td>jane.smith@example.com</td>
+                <td><span class="status inactive">Inactive</span></td>
+            </tr>
+            <tr>
+                <td>#103</td>
+                <td>David Brown</td>
+                <td>HR</td>
+                <td>david.brown@example.com</td>
+                <td><span class="status pending">Pending</span></td>
+            </tr>
+            <tr>
+                <td>#104</td>
+                <td>Sarah Wilson</td>
+                <td>IT</td>
+                <td>sarah.wilson@example.com</td>
+                <td><span class="status active">Active</span></td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>

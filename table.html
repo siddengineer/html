@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+</head>
+<body>
+    <table border="1">
+        <caption>Product Details</caption>
+        <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>Phone</td>
+            <td>300</td>
+            <td>2000</td>
+        </tr>
+        <tr>
+            <td>Laptop</td>
+            <td rowspan = "2">200,200</td>
+            <td colspan = "2">10000,10000</td>
+            
+        </tr>
+        <div class = "table-container">
+            <h2>empolyee database</h2>
+        </div>
+    </table>
+    <style>
+        table{
+            border-collapse: collapse;
+            width: 100%;
+            background-color: aqua;
+        }
+        tr ,td{
+            border: 1px solid black ;
+            padding: 10px;
+            text-align: center;
+            background-color: white;
+        }
+        .table-container{
+            color:red;
+        }
+        tr:hover{
+            background: red;
+        }
+     
+    </style>
+</body>
+
+</html>
